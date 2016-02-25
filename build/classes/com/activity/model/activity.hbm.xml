@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.activity.model.ActivityVO" table="activity" >
+        
+        <id name="actno" column="actno">
+            <generator class="sequence" >
+              <param name="sequence">act_seq</param>
+            </generator>  
+        </id>
+        <property name="actcon" column="actcon" />
+        <property name="acttown" column="acttown" />
+        <property name="actname" column="actname" />
+        <property name="actphone" column="actphone" />
+        <property name="actaddress" column="actaddress" />
+        <property name="actcontent" column="actcontent" />
+        <property name="actsite" column="actsite" />
+        <property name="actpic" column="actpic" />
+        <property name="actorg" column="actorg" />
+        <property name="actbegin" column="actbegin" />
+        <property name="actend" column="actend" />
+        <property name="acthours" column="acthours" />
+        <property name="actlat" column="actlat" />
+        <property name="actlong" column="actlong" />
+        <property name="actprice" column="actprice" />
+        <property name="actstatus" column="actstatus" />
+        <property name="actstay" column="actstay" />
+    </class>
+</hibernate-mapping>
+

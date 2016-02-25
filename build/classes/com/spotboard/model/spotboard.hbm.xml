@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.spotboard.model.SpotboardVO" table="spotboard" >
+        
+        <id name="sbno" column="sbno">
+            <generator class="sequence" >
+              <param name="sequence">sb_seq</param>
+            </generator>  
+        </id>
+        <property name="spotno" column="spotno" />
+        <property name="memno" column="memno" />
+        <property name="sbcontent" column="sbcontent" />
+        <property name="sbtime" column="sbtime" />
+    </class>
+</hibernate-mapping>
+

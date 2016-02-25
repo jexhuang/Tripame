@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.travel.model.TravelVO" table="travel" >
+        
+        <id name="travelno" column="travelno">
+            <generator class="sequence" >
+              <param name="sequence">travel_seq</param>
+            </generator>  
+        </id>
+        <property name="travelname" column="travelname" />
+        <property name="travelbegin" column="travelbegin" />
+        <property name="travelend" column="travelend" />
+        <property name="travelcontent" column="travelcontent" />
+        <property name="travellimit" column="travellimit" />
+        <property name="traveldeadline" column="traveldeadline" />
+        <property name="travelpic" column="travelpic" />
+        <property name="travelstatus" column="travelstatus" />
+        <property name="travelprice" column="travelprice" />
+    </class>
+</hibernate-mapping>
+

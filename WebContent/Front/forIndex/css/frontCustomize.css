@@ -1,0 +1,17 @@
+.button {
+		width:300px;
+		box-shadow: 0px 0px 0px 2px #0099DD;
+		background-color:#0099DD;
+		display:inline-block;
+		cursor:pointer;
+		padding:12px 37px;
+		text-decoration:none;
+		border: 0px;
+		font: bold 18px "·L³n¥¿¶ÂÅé";
+		color: white;
+		text-align: center;
+	}
+	.button:hover {
+		background-color: #00abf7; ;
+		color: white;
+	}

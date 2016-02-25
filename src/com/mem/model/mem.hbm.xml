@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.mem.model.MemVO" table="mem" >
+        
+        <id name="memno" column="memno">
+            <generator class="sequence" >
+              <param name="sequence">mem_seq</param>
+            </generator>  
+        </id>
+        <property name="memname" column="memname" />
+        <property name="memid" column="memid" />
+        <property name="mempw" column="mempw" />
+        <property name="mememail" column="mememail" />
+        <property name="memcode" column="memcode" />
+        <property name="memstatus" column="memstatus" />
+        <property name="mempic" column="mempic" />
+    </class>
+</hibernate-mapping>
+

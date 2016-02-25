@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.rec.model.RecVO" table="rec" >
+        
+        <id name="recno" column="recno">
+            <generator class="sequence" >
+              <param name="sequence">rec_seq</param>
+            </generator>  
+        </id>
+        <property name="memno" column="memno" />
+        <property name="recclass" column="recclass" />
+        <property name="recsort" column="recsort" />
+        <property name="reccon" column="reccon" />
+        <property name="rectown" column="rectown" />
+        <property name="recname" column="recname" />
+        <property name="recphone" column="recphone" />
+        <property name="recaddress" column="recaddress" />
+        <property name="reccontent" column="reccontent" />
+        <property name="recpic" column="recpic" />
+        <property name="recsite" column="recsite" />
+        <property name="reclat" column="reclat" />
+        <property name="reclong" column="reclong" />
+        <property name="recstatus" column="recstatus" />
+        <property name="recmessage" column="recmessage" />
+    </class>
+</hibernate-mapping>
+

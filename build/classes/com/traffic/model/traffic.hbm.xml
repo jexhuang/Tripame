@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.traffic.model.TrafficVO" table="traffic" >
+        
+        <id name="trano" column="trano">
+            <generator class="sequence" >
+              <param name="sequence">traffic_seq</param>
+            </generator>  
+        </id>
+        <property name="traclass" column="traclass" />
+        <property name="traname" column="traname" />
+        <property name="traphone" column="traphone" />
+        <property name="tracon" column="tracon" />
+        <property name="traaddress" column="traaddress" />
+        <property name="trasite" column="trasite" />
+    </class>
+</hibernate-mapping>
+

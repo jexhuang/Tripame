@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.emp.model.EmpVO" table="emp" >
+        
+        <id name="empno" column="empno">
+            <generator class="sequence" >
+              <param name="sequence">emp_seq</param>
+            </generator>  
+        </id>
+        <property name="empname" column="empname" />
+        <property name="empid" column="empid" />
+        <property name="emppw" column="emppw" />
+        <property name="empemail" column="empemail" />
+        <property name="empad" column="empad" />
+        <property name="emptravel" column="emptravel" />
+        <property name="empactivity" column="empactivity" />
+        <property name="empemp" column="empemp" />
+        <property name="empforums" column="empforums" />
+        <property name="emprec" column="emprec" />
+        <property name="empmem" column="empmem" />
+        <property name="emptraffic" column="emptraffic" />
+        <property name="empspot" column="empspot" />
+    </class>
+</hibernate-mapping>
+

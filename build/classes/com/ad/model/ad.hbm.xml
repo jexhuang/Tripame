@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.ad.model.AdVO" table="ad" >
+        
+        <id name="adno" column="adno">
+            <generator class="sequence" >
+              <param name="sequence">ad_seq</param>
+            </generator>  
+        </id>
+        <property name="memno" column="memno" />
+        <property name="adclass" column="adclass" />
+        <property name="adsort" column="adsort" />
+        <property name="adcon" column="adcon" />
+        <property name="adtown" column="adtown" />
+        <property name="adname" column="adname" />
+        <property name="adphone" column="adphone" />
+        <property name="adaddress" column="adaddress" />
+        <property name="adcontent" column="adcontent" />
+        <property name="adpic" column="adpic" />
+        <property name="adsite" column="adsite" />
+        <property name="adlat" column="adlat" />
+        <property name="adlong" column="adlong" />
+        <property name="adstatus" column="adstatus" />
+        <property name="adbegin" column="adbegin" />
+        <property name="adend" column="adend" />
+        <property name="admessage" column="admessage" />
+    </class>
+</hibernate-mapping>
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.spot.model.SpotVO" table="spot" >
+        
+        <id name="spotno" column="spotno">
+            <generator class="sequence" >
+              <param name="sequence">spot_seq</param>
+            </generator>  
+        </id>
+        <property name="memno" column="memno" />
+        <property name="spotclass" column="spotclass" />
+        <property name="spotsort" column="spotsort" />
+        <property name="spotcon" column="spotcon" />
+        <property name="spottown" column="spottown" />
+        <property name="spotname" column="spotname" />
+        <property name="spotphone" column="spotphone" />
+        <property name="spotaddress" column="spotaddress" />
+        <property name="spotcontent" column="spotcontent" />
+        <property name="spotpic" column="spotpic" />
+        <property name="spotsite" column="spotsite" />
+        <property name="spotlat" column="spotlat" />
+        <property name="spotlong" column="spotlong" />
+        <property name="spotstatus" column="spotstatus" />
+        <property name="spotlook" column="spotlook" />
+        <property name="spotstay" column="spotstay" />
+    </class>
+</hibernate-mapping>
+
